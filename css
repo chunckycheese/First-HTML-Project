@@ -1,15 +1,365 @@
-body {
-  background-color: lightblue;
+body{
+    margin: 0;
+    font-size: 18px;
+    font-family: montserrat;
+    text-align: center;
 }
 
-h1 {
-  color: white;
-  text-align: center;
+.section{
+    background: #ABF0D1;  
+    color: #37675D;
 }
 
-p {
-  font-family: verdana;
-  font-size: 45px;
+h{
+    font-size: 120px;
+}
+
+.section h1{
+    font-size: 80px;
+    text-align: left;
+}
+
+p{
+    text-align: left;
+}
+
+#fp-nav.fp-right{
+    right: 10px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: #37675D;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    max-height: 100%;
+    overflow; auto;
+    padding-right: 15px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+#header{
+    position:fixed;
+    height: 50px;
+    display:block;
+    width: 100%;
+    background: rgba(255,255,255,0);
+    z-index:9;
+    text-align:center;
+    color: #FFF;
+    padding: 20px 0 0 0;
+    top:0px;
 }
 
 
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111814;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #88c0a7;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #88C0A7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #66907D;
+}
+
+.funnycontainer {
+    border-radius: 5px;
+    background-color: #C4F4DE;
+    padding: 20px;
+}
+
+.zigzag{ 
+    border: none; 
+    margin: auto; 
+    margin-top: 5%; 
+    margin-bottom: 5%; 
+    height: 40px; 
+    background: linear-gradient(135deg, #ABF0D1 25%, transparent 25%) -20px 0, 
+    linear-gradient(225deg, #ABF0D1 25%, transparent 25%) -20px 0, 
+    linear-gradient(315deg, #ABF0D1 25%, transparent 25%), 
+    linear-gradient(45deg, #ABF0D1 25%, transparent 25%); 
+    background-size: 40px 40px; 
+    background-color: #37675D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#section2{
+    background: linear-gradient(180deg, rgba(171,240,209,1) 35%, rgba(138,234,191,1) 100%);
+}body{
+    margin: 0;
+    font-size: 18px;
+    font-family: montserrat;
+    text-align: center;
+}
+
+.section{
+    background: #ABF0D1;  
+    color: #37675D;
+}
+
+h{
+    font-size: 120px;
+}
+
+.section h1{
+    font-size: 80px;
+    text-align: left;
+}
+
+p{
+    text-align: left;
+}
+
+#fp-nav.fp-right{
+    right: 10px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: #37675D;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    max-height: 100%;
+    overflow; auto;
+    padding-right: 15px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+#header{
+    position:fixed;
+    height: 50px;
+    display:block;
+    width: 100%;
+    background: rgba(255,255,255,0);
+    z-index:9;
+    text-align:center;
+    color: #FFF;
+    padding: 20px 0 0 0;
+    top:0px;
+}
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111814;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #88c0a7;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #88C0A7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #66907D;
+}
+
+.funnycontainer {
+    border-radius: 5px;
+    background-color: #C4F4DE;
+    padding: 20px;
+}
+
+.zigzag{ 
+    border: none; 
+    margin: auto; 
+    margin-top: 5%; 
+    margin-bottom: 5%; 
+    height: 40px; 
+    background: linear-gradient(135deg, #ABF0D1 25%, transparent 25%) -20px 0, 
+    linear-gradient(225deg, #ABF0D1 25%, transparent 25%) -20px 0, 
+    linear-gradient(315deg, #ABF0D1 25%, transparent 25%), 
+    linear-gradient(45deg, #ABF0D1 25%, transparent 25%); 
+    background-size: 40px 40px; 
+    background-color: #37675D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#section2{
+    background: linear-gradient(180deg, rgba(171,240,209,1) 35%, rgba(138,234,191,1) 100%);
+}
